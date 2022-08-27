@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michaelis-Menten Equation Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="reactionrateRadio" name="variables" checked>
+  <label for="reactionrateRadio">Reaction rate</label>
+
+  <input type="radio" id="michaelisconstantRadio" name="variables">
+  <label for="michaelisconstantRadio">Michaelis constant</label>
+
+  <input type="radio" id="maxreactionspeedRadio" name="variables">
+  <label for="maxreactionspeedRadio">Max reaction speed</label>
+
+  <input type="radio" id="substrateconcentrationRadio" name="variables" disabled>
+  <label for="substrateconcentrationRadio">Substrate concentration</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Michaelis constant</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Max reaction speed</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Substrate concentration</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
